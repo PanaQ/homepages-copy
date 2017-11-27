@@ -1,108 +1,1022 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<title>天猫tmall.com--理想生活</title>
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		
-	</head>
-	<body>
-		<!--头部-->
-		<header>
-			<div class="left">
-				<a href="#">喵，欢迎来天猫</a>
-				<a href="#"> 请登录 </a>
-				<a href="#"> 免费注册</a>
-			</div>
-			<ul>
-				<li>
-					<a href="#">我的淘宝<i class="xia glyphicon glyphicon-triangle-bottom"></i></a> 
-				</li>
-				<li>
-					<a href="#"><i class="c-red glyphicon glyphicon-shopping-cart"></i>购物车<strong>0</strong>件</a>
-				</li>
-				<li >
-					<a href="#" class="">收藏夹<i class="glyphicon glyphicon-triangle-bottom  line-right"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="c-red glyphicon glyphicon-phone"></i>手机版</a>
-				</li>
-				<li>
-					<a href="#">淘宝网</a>
-				</li>
-				<li>
-					<a href="#">商家支持<i class="glyphicon glyphicon-triangle-bottom"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="c-red glyphicon glyphicon-list"></i>网站导航
-						<i class="glyphicon glyphicon-triangle-bottom"></i></a>
-				</li>
-			</ul>
-		</header>
-		<!--头部end-->
-		
-		<!--导航部分-->
-		<nav>
-			<img src="img/logo.png" class="logo"/>
-			<input type="text" placeholder="搜索 天猫 商品/品牌/店铺" />
-			<button>搜索</button>
-			<ul>
-				<li><a href="#">针织衫</a></li>
-				<li><a href="#">羽绒服</a></li>
-				<li><a href="#">四件套</a></li>
-				<li><a href="#">天猫精灵</a></li>
-				<li><a href="#">客厅灯</a></li>
-				<li><a href="#">口红</a></li>
-				<li><a href="#">手机</a></li>
-				<li><a href="#">女鞋</a></li>
-				<li class="nor"><a href="#">牛奶</a></li>
-			</ul>
-		</nav>
-		<!--导航部分end-->
-		
-		<!--导航条部分-->
-		<div class="links">
-			<span>
-				<i class="glyphicon glyphicon-list"></i>
-				商品分类
-			</span>
-			<img src="img/tmall-market.png" />
-			<img src="img/tmall-guoji.png" />
-			<a href="#">天猫会员</a>
-			<a href="#">电器城</a>
-			<a href="#">喵生鲜</a>
-			<a href="#">医药馆</a>
-			<a href="#">营业厅</a>
-			<a href="#">魅力惠</a>
-			<a href="#">飞猪旅行</a>
-			<a href="#">苏宁易购</a>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>天猫tmall.com--理想生活</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+	<!--头部-->
+	<header>
+		<div class="left">
+			<a href="#">喵，欢迎来天猫</a>
+			<a href="#"> 请登录 </a>
+			<a href="#"> 免费注册</a>
 		</div>
-		<!--导航条部分结束-->
-		
-		<!--轮播图部分-->
-		<div class="lb">
-			
-			<div id="slider">
-				<div class="slider-content">
-					<div class="main-bar show"><img src="img/lb/lb1.jpg"/></div>
-					<div class="main-bar"><img src="img/lb/lb2.jpg"/></div>
-					<div class="main-bar"><img src="img/lb/lb3.jpg"/></div>
-					<div class="main-bar"><img src="img/lb/lb4.jpg"/></div>
-					<div class="main-bar"><img src="img/lb/lb1.jpg"/></div>
-					<div class="main-bar"><img src="img/lb/lb2.jpg"/></div>
+		<ul>
+			<li>
+				<a href="#">我的淘宝
+					<i class="xia glyphicon glyphicon-triangle-bottom"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="c-red glyphicon glyphicon-shopping-cart"></i>购物车
+					<strong>0</strong>件</a>
+			</li>
+			<li>
+				<a href="#" class="">收藏夹
+					<i class="glyphicon glyphicon-triangle-bottom  line-right"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="c-red glyphicon glyphicon-phone"></i>手机版</a>
+			</li>
+			<li>
+				<a href="#">淘宝网</a>
+			</li>
+			<li>
+				<a href="#">商家支持
+					<i class="glyphicon glyphicon-triangle-bottom"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="c-red glyphicon glyphicon-list"></i>网站导航
+					<i class="glyphicon glyphicon-triangle-bottom"></i>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!--头部end-->
+
+	<!--导航部分-->
+	<nav>
+		<img src="img/logo.png" class="logo" />
+		<input type="text" placeholder="搜索 天猫 商品/品牌/店铺" />
+		<button>搜索</button>
+		<ul>
+			<li>
+				<a href="#">针织衫</a>
+			</li>
+			<li>
+				<a href="#">羽绒服</a>
+			</li>
+			<li>
+				<a href="#">四件套</a>
+			</li>
+			<li>
+				<a href="#">天猫精灵</a>
+			</li>
+			<li>
+				<a href="#">客厅灯</a>
+			</li>
+			<li>
+				<a href="#">口红</a>
+			</li>
+			<li>
+				<a href="#">手机</a>
+			</li>
+			<li>
+				<a href="#">女鞋</a>
+			</li>
+			<li class="nor">
+				<a href="#">牛奶</a>
+			</li>
+		</ul>
+	</nav>
+	<!--导航部分end-->
+
+	<!--导航条部分-->
+	<div class="links">
+		<span>
+			<i class="glyphicon glyphicon-list"></i>
+			商品分类
+		</span>
+		<img src="img/tmall-market.png" />
+		<img src="img/tmall-guoji.png" />
+		<a href="#">天猫会员</a>
+		<a href="#">电器城</a>
+		<a href="#">喵生鲜</a>
+		<a href="#">医药馆</a>
+		<a href="#">营业厅</a>
+		<a href="#">魅力惠</a>
+		<a href="#">飞猪旅行</a>
+		<a href="#">苏宁易购</a>
+	</div>
+	<!--导航条部分结束-->
+
+	<!--轮播图部分-->
+	<div class="swip">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/lb/lb1.jpg" />
 				</div>
-				<div class="slider-nav">
-					<li class="selected"></li>
-					<li class="selected"></li>
-					<li class="selected"></li>
-					<li class="selected"></li>
-					<li class="selected"></li>
-					<li class="selected"></li>
-				</div>			
+				<div class="swiper-slide">
+					<img src="img/lb/lb2.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lb/lb3.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lb/lb4.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lb/lb1.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/lb/lb2.jpg" />
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!-- 轮播图的导航部分 -->
+		<ul class="left-S">
+			<li>
+				<a href="#">女装/内衣</a>
+				<ul class="showS">
+					<li class="fix">
+						<div>1儿童读物&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>畅销小说&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>文学文艺&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>社科生活&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>育儿百科&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>学习考试&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>教材教辅&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>经管励志&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>进口原版&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>大牌乐器&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">男装/运动户外</a>
+				<ul class="showS">
+					<li class="fix">
+						<div>2儿童读物&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>畅销小说&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>文学文艺&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>社科生活&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>育儿百科&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>学习考试&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>教材教辅&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>经管励志&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>进口原版&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+					<li class="fix">
+						<div>大牌乐器&nbsp;&nbsp;></div>
+						<div>
+							<a href="#">畅销童书</a>
+							<a href="#">绘本</a>
+							<a href="#">儿童文学</a>
+							<a href="#">启蒙认知</a>
+							<a href="#">益智游戏</a>
+							<a href="#">幼儿科普</a>
+							<a href="#">童话书</a>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">女鞋/男鞋/箱包</a>
+			</li>
+			<li>
+				<a href="#">美妆/个人护理</a>
+			</li>
+			<li>
+				<a href="#">腕表/眼镜/珠宝饰品</a>
+			</li>
+			<li>
+				<a href="#">手机/数码/电脑办公</a>
+			</li>
+			<li>
+				<a href="#">母婴玩具</a>
+			</li>
+			<li>
+				<a href="#">零食/茶酒/进口食品</a>
+			</li>
+			<li>
+				<a href="#">生鲜水果</a>
+			</li>
+			<li>
+				<a href="#">大家电/生活电器</a>
+			</li>
+			<li>
+				<a href="#">家具建材</a>
+			</li>
+			<li>
+				<a href="#">汽车/配件/用品</a>
+			</li>
+			<li>
+				<a href="#">家纺/家饰/鲜花</a>
+			</li>
+			<li>
+				<a href="#">医药保健</a>
+			</li>
+			<li>
+				<a href="#">厨具/收纳/宠物</a>
+			</li>
+			<li>
+				<a href="#">图书音像</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 黑色星期五 -->
+
+	<div class="blackfriday">
+		<div class="row">
+			<img src="img/blackfriday.png" alt="" class="center-block">
+		</div>
+
+		<div class="row">
+			<div class="blacks">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<img src="img/black1.png" alt="">
+				</div>
+				<div class="col-md-2">
+					<img src="img/black2.png" alt="">
+				</div>
+				<div class="col-md-2">
+					<img src="img/black3.png" alt="">
+				</div>
+				<div class="col-md-2">
+					<img src="img/black4.png" alt="">
+				</div>
+				<div class="col-md-2">
+					<img src="img/black1.png" alt="">
+				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+	<!-- 黑色星期五部分end -->
+
+	<!-- 品牌荟萃 -->
+	<div class="brand">
+		<div class="brand1">
+			<span>品牌闪购 BRAND SALE
+				<i class="more glyphicon glyphicon-chevron-right"></i>
+			</span>
+			<img src="img/brand1.png" alt="">
+		</div>
+		<div class="brand2">
+			<span>聚名品 BRAND SALE
+				<i class="more glyphicon glyphicon-chevron-right"></i>
+			</span>
+			<img src="img/brand2.png" alt="">
+		</div>
+		<div class="brand3">
+			<span>品牌活动 BRAND SALE
+				<i class="more glyphicon glyphicon-chevron-right"></i>
+			</span>
+			<img src="img/brand3.png" alt="">
+		</div>
+
+		<div class="brands">
+			<div class="row11">
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+			<div class="row22">
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+			<div class="row33">
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<!-- 品牌end -->
+
+	<!-- 天猫超市 -->
+	<div class="tmallshop">
+		<div class="head">
+			<img src="img/tmall-shop/tmshop1.png" alt="">
+			<ul>
+				<li>
+					<a href="#">进口食品</a>
+				</li>
+				<li>
+					<a href="#">食品饮料</a>
+				</li>
+				<li>
+					<a href="#">粮油副食</a>
+				</li>
+				<li>
+					<a href="#">美容洗护</a>
+				</li>
+				<li>
+					<a href="#">家具家电</a>
+				</li>
+				<li>
+					<a href="#">家庭清洁</a>
+				</li>
+				<li>
+					<a href="#">母婴用品</a>
+				</li>
+				<li>
+					<a href="#">生鲜水果</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shopbody">
+			<div class='left'>
+				<img src="img/tmall-shop/left-img1.jpg" alt="">
+			</div>
+			<div class="middle">
+				<div class="tab">
+					<p>今日疯抢</p>
+					<p>量贩装</p>
+					<div class='tab1'>
+						<div>
+							<img src="img/tmall-shop/sm-shop.png" alt="">
+							<span class="tt">限时疯抢</span>
+							<span class="cc">1元超值抢购中</span>
+						</div>
+						<img src="img/tmall-shop/tm11.jpg" alt="" class="rr">
+					</div>
+					<div class='tab2'>
+						<img src="img/tmall-shop/tmshop22.jpg" alt="" class="rr">
+					</div>
+				</div>
+				<figure>
+					<img src="img/tmall-shop/shop5.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/tmall-shop/shop6.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="right">
+				<figure>
+					<img src="img/tmall-shop/shop1.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/tmall-shop/shop2.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/tmall-shop/shop3.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/tmall-shop/shop4.jpg" alt="" class="bot">
+					<figcaption>
+						金龙鱼 盘锦大米 蟹稻共生5KG 东北大米
+						<p>¥29.9</p>
+					</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- 天猫超市end -->
+	<!-- 天猫国际 -->
+	<div class="tmallgj">
+		<div class="head">
+			<img src="img/tm-gj/tmgjlogo.png" alt="">
+			<ul>
+				<li>
+					<a href="#">口红</a>
+				</li>
+				<li>
+					<a href="#">YSL</a>
+				</li>
+				<li>
+					<a href="#">面膜</a>
+				</li>
+				<li>
+					<a href="#">防晒</a>
+				</li>
+				<li>
+					<a href="#">迪奥</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="row11">
+			<div>
+				<span>奢享生活</span>
+				<p>急速发货</p>
+				<p>全球低价</p>
+				<img src="img/tm-gj/tm-sm.png" alt="">
+			</div>
+			<figure>
+				<img src="img/tm-gj/g1.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g2.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g3.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g4.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="row22">
+			<div>
+				<span>春季上新</span>
+				<p>急速发货</p>
+				<p>全球低价</p>
+				<img src="img/tm-gj/tm-sm.png" alt="">
+			</div>
+			<figure>
+				<img src="img/tm-gj/g5.png" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g6.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g7.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tm-gj/g8.jpg" alt="">
+				<figcaption>
+					韩国正品bbia口红丝绒亚光雾面口红3.2g
+					<p>¥54</p>
+				</figcaption>
+			</figure>
+		</div>
+
+	</div>
+	<!-- 天猫国际end -->
+	<!-- 广告条 -->
+	<div class="gg"></div>
+
+
+
+
+
+
+	<footer>
+		<div class="top">
+			<ul>
+				<a href="#">
+					<li>
+						<img src="img/footer/foot1.png" />
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="img/footer/foot2.png" />
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="img/footer/foot3.png" />
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<img src="img/footer/foot4.png" />
+					</li>
+				</a>
+			</ul>
+			<div>
+				<ol>
+					<h4>购物指南</h4>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">开通支付宝</a>
+					</li>
+					<li>
+						<a href="#">支付宝充值</a>
+					</li>
+				</ol>
+				<ol>
+					<h4>天猫保障</h4>
+					<li>
+						<a href="#">发票保障</a>
+					</li>
+					<li>
+						<a href="#">售后服务</a>
+					</li>
+					<li>
+						<a href="#">缺货赔付</a>
+					</li>
+				</ol>
+				<ol>
+					<h4>支付方式</h4>
+					<li>
+						<a href="#">快捷支付</a>
+					</li>
+					<li>
+						<a href="#">信用卡</a>
+					</li>
+					<li>
+						<a href="#">余额宝</a>
+					</li>
+					<li>
+						<a href="#">蚂蚁花呗</a>
+					</li>
+					<li>
+						<a href="#">货到付款</a>
+					</li>
+				</ol>
+				<ol>
+					<h4>商家服务</h4>
+					<li>
+						<a href="#">天猫规则</a>
+					</li>
+					<li>
+						<a href="#">商家入驻</a>
+					</li>
+					<li>
+						<a href="#">商家中心</a>
+					</li>
+					<li>
+						<a href="#">天猫智库</a>
+					</li>
+					<li>
+						<a href="#">物流服务</a>
+					</li>
+					<li>
+						<a href="#">喵言喵语</a>
+					</li>
+					<li>
+						<a href="#">运营服务</a>
+					</li>
+				</ol>
+				<ol>
+					<h4>手机天猫</h4>
+					<img src="img/footer/zhen_erweima.png" alt="" />
+				</ol>
+			</div>
+			<div class="miao"></div>
+		</div>
+		<div class="bottom">
+			<div>
+				<ul>
+					<li>
+						<a href="">关于天猫</a>
+					</li>
+					<li>
+						<a href="">帮助中心</a>
+					</li>
+					<li>
+						<a href="">开放平台</a>
+					</li>
+					<li>
+						<a href="">诚聘英才</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">法律说明以及隐私权政策</a>
+					</li>
+					<li>
+						<a href="">知识产权</a>
+					</li>
+					<li>
+						<a href="">廉政举报</a>
+					</li>
+					<li>
+						<a href="">规则意见征集</a>
+					</li>
+				</ul>
+				<ol>
+					<li>
+						<a href="">阿里巴巴集团</a>
+					</li> |
+					<li>
+						<a href="">淘宝网</a>
+					</li> |
+					<li>
+						<a href="">天猫</a>
+					</li> |
+					<li>
+						<a href="">聚划算</a>
+					</li> |
+					<li>
+						<a href="">全球速卖通</a>
+					</li> |
+					<li>
+						<a href="">阿里巴巴国际交易市场</a>
+					</li> |
+					<li>
+						<a href="">1688</a>
+					</li> |
+					<li>
+						<a href="">阿里妈妈</a>
+					</li> |
+					<li>
+						<a href="">飞猪</a>
+					</li> |
+					<li>
+						<a href="">阿里云计算</a>
+					</li> |
+					<li>
+						<a href="">YunOS</a>
+					</li> |
+					<li>
+						<a href="">阿里通信</a>
+					</li> |
+					<li>
+						<a href="">万网</a>
+					</li> |
+					<li>
+						<a href="">高德</a>
+					</li> |
+					<li>
+						<a href="">UC</a>
+					</li> |
+					<li>
+						<a href="">友盟</a>
+					</li> |
+					<li>
+						<a href="">虾米</a>
+					</li> |
+					<li>
+						<a href="">阿里星球</a>
+					</li> |
+					<li>
+						<a href="">来往</a>
+					</li> |
+					<li>
+						<a href="">钉钉</a>
+					</li> |
+					<li>
+						<a href="">支付宝</a>
+					</li>
+				</ol>
+				<div>
+					<span>增值电信业务经营许可证：
+						<a href="#">浙B2-20110446</a>
+					</span>
+					<span> 网络文化经营许可证：
+						<a href="#">浙网文[2015]0295-065号</a>
+					</span>
+					<span>
+						<a href="#">12318举报</a>
+					</span>
+				</div>
+				<div>
+					<span>互联网药品信息服务资质证书编号：
+						<a href="#">浙-（经营性）-2017-0005 </a>
+					</span>
+					<span>
+						<img src="img/footer/zw.png" />
+						<a href="#">浙公网安备 33010002000120号</a>
+					</span>
+				</div>
+				<p>© 2003-2017 TMALL.COM 版权所有</p>
+				<div>
+					<img src="img/footer/wlwh.jpg" />
+					<img src="img/footer/wlgs.jpg" />
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- 悬浮部分 -->
+	<ul class="leftnav">
+		<li>导航</li>
+		<li>天猫
+			<br>超市</li>
+		<li>天猫
+			<br>国际</li>
+		<li>美丽
+			<br>人生</li>
+		<li>潮店
+			<br>酷玩</li>
+		<li>居家
+			<br>生活</li>
+		<li>打造
+			<br>爱巢</li>
+		<li>户外
+			<br>出行</li>
+		<li>猜你
+			<br>喜欢</li>
+		<li>顶部</li>
+	</ul>
+
+
+
+
+<!-- js部分 -->
+	<script src="js/jquery.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true,
+			loop: true,
+			effect: 'fade',
+			watchSlidesProgress: true,
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			}
+		});
+
+
+		$(".left-S>li").on("mouseenter", function () {
+			$(this).children("ul").css("display", "block");
+		});
+		$(".left-S>li").on("mouseleave", function () {
+			$(this).children("ul").css("display", "none");
+		});
+	</script>
+
+
+
+
+
+
+</body>
+
+
 </html>
